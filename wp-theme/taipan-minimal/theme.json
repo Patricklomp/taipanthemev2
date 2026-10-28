@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"color": {
+			"custom": false,
+			"customGradient": false,
+			"customDuotone": false,
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"defaultDuotone": false,
+			"palette": [
+				{ "slug": "text", "name": "Tekst", "color": "#201f1d" },
+				{ "slug": "background", "name": "Taust", "color": "#f3f2f2" },
+				{ "slug": "surface", "name": "Pind", "color": "#eae9e9" },
+				{ "slug": "accent", "name": "Roheline", "color": "#317a45" },
+				{ "slug": "accent-dark", "name": "Tumeroheline", "color": "#225a31" },
+				{ "slug": "muted", "name": "Hall", "color": "#605d5d" }
+			]
+		},
+		"typography": {
+			"customFontSize": false,
+			"defaultFontSizes": false,
+			"dropCap": false,
+			"fontFamilies": [
+				{ "slug": "heading", "name": "Cormorant Garamond", "fontFamily": "\"Cormorant Garamond\", serif" },
+				{ "slug": "body", "name": "Lora", "fontFamily": "Lora, serif" }
+			],
+			"fontSizes": [
+				{ "slug": "small", "name": "Väike", "size": "13px" },
+				{ "slug": "medium", "name": "Tavaline", "size": "16.5px" },
+				{ "slug": "large", "name": "Suur", "size": "24px" },
+				{ "slug": "x-large", "name": "Väga suur", "size": "clamp(30px, 3.4vw, 44px)" }
+			]
+		},
+		"layout": {
+			"contentSize": "760px",
+			"wideSize": "1200px"
+		}
+	}
+}

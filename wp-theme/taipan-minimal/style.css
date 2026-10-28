@@ -1,0 +1,18 @@
+/*
+Theme Name: Taipan Minimal
+Theme URI: https://taipan.ee
+Author: Patrick Lomp
+Author URI: http://patricklomp.ee
+Description: Minimalist theme for Taipan OÜ: Anu Lomp's guide services on Saaremaa, Muhu and Kuressaare, plus business consulting. Built from the Taipan.ee minimalist redesign.
+Version: 1.0.2
+Requires at least: 6.5
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: taipan-minimal
+Tags: one-column, custom-menu, featured-images, editor-style
+*/
+
+/* The styles are in assets/css: ds.css (design-system tokens and components),
+   site.css (site layout, ported 1:1 from the React build) and wp.css
+   (generic WordPress pages, posts and blocks). */
