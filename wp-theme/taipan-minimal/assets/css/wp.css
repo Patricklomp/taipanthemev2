@@ -81,8 +81,7 @@ main [id] { scroll-margin-top: 80px; }
   color: var(--color-accent-700);
 }
 
-/* Image + text columns: smaller headings, and the image first once stacked */
-.entry-content .wp-block-column h2 { font-size: clamp(26px, 2.6vw, 34px); }
+/* Image + text columns: the image first once stacked */
 @media (max-width: 781px) {
   .entry-content .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:has(> .wp-block-image) { order: -1; }
 }

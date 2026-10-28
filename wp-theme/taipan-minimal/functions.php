@@ -5,7 +5,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-const TAIPAN_VERSION   = '1.0.3';
+const TAIPAN_VERSION   = '1.0.4';
 const TAIPAN_FONTS_URL = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap';
 
 require_once get_template_directory() . '/inc/customizer.php';
