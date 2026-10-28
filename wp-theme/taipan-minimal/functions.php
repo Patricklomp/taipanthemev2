@@ -5,7 +5,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-const TAIPAN_VERSION   = '1.0.2';
+const TAIPAN_VERSION   = '1.0.3';
 const TAIPAN_FONTS_URL = 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap';
 
 require_once get_template_directory() . '/inc/customizer.php';
@@ -56,6 +56,7 @@ add_filter( 'wp_resource_hints', 'taipan_resource_hints', 10, 2 );
 function taipan_block_styles() {
 	register_block_style( 'core/image', array( 'name' => 'plate', 'label' => 'Raamitud' ) );
 	register_block_style( 'core/button', array( 'name' => 'ghost', 'label' => 'Tekstinupp' ) );
+	register_block_style( 'core/paragraph', array( 'name' => 'facts', 'label' => 'Faktid' ) );
 	register_block_pattern_category( 'taipan', array( 'label' => 'Taipan' ) );
 }
 add_action( 'init', 'taipan_block_styles' );

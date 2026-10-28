@@ -69,7 +69,23 @@ main [id] { scroll-margin-top: 80px; }
 .entry-content > .alignwide { max-width: none; }
 .entry-content > .alignfull { max-width: none; margin-inline: calc(50% - 50vw); }
 .entry-content > :last-child { margin-bottom: 0; }
-.entry-content p { text-align: justify; hyphens: auto; }
+.entry-content > p:empty { display: none; }
+
+/* "Faktid" paragraph style: a tour's Kestus / Liikumine / Sobib lines */
+.entry-content p.is-style-facts {
+  padding: 16px 0; border-block: 1px solid var(--color-divider);
+  font-size: 15px; line-height: 1.9;
+}
+.entry-content p.is-style-facts strong {
+  font-weight: 400; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--color-accent-700);
+}
+
+/* Image + text columns: smaller headings, and the image first once stacked */
+.entry-content .wp-block-column h2 { font-size: clamp(26px, 2.6vw, 34px); }
+@media (max-width: 781px) {
+  .entry-content .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:has(> .wp-block-image) { order: -1; }
+}
 
 .entry-content h2, .entry-content h3, .entry-content h4 { font-weight: 400; margin: 1.6em 0 0.5em; }
 .entry-content h2 { font-size: clamp(30px, 3.4vw, 44px); line-height: 1.15; }

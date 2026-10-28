@@ -2,7 +2,6 @@
    buttons look as on the site. This adds the text-column typography that the
    front end applies through .entry-content. */
 body { font-size: 16.5px; line-height: 1.7; }
-p:not(.kicker, .split-title, .hero-lead, .signature, .about-lead, .consulting-lead) { text-align: justify; hyphens: auto; }
 
 h2.wp-block-heading:not([class*='h2-']), h3.wp-block-heading { font-weight: 400; }
 h2.wp-block-heading:not([class*='h2-']) { font-size: clamp(30px, 3.4vw, 44px); line-height: 1.15; }
